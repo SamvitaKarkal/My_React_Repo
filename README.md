@@ -4,7 +4,7 @@ React.createElement(type,props,children)
 React.createElement(h1,null,"hello world")
 
 JSX helps to generate above code with below syntax.
-'const element = = <h1>Hello world</h1>;'
+>const element = = <h1>Hello world</h1>;
 
 
 ## Lifecycle of a component:
