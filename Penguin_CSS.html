@@ -1,0 +1,190 @@
+<!DOCtype HTML>
+<HTML>
+<head></head>
+
+<body>
+<style>
+  body{
+    background: #f7f7e7;
+  }
+
+  .penguin{
+    --penguin-skin: black;
+    --penguin-belly: gray;
+    --penguin-beak: yellow;
+    position: relative;
+    margin: auto;
+    display:block;
+    margin-top:5%;
+    width:300px;
+    height:300px;
+  }
+
+  .penguin-bottom{
+    background: var(--penguin-skin,black);
+    width: 130px;
+    height: 130px;
+    margin-top: 50%;
+    border-radius: 120% 120% 100% 100%;
+    margin-left:25%;
+  }
+
+  .penguin-top{
+    background: var(--penguin-skin,black);
+    width: 130px;
+    height: 120px;
+    margin-top: 25%;
+    border-radius: 100% 100% 100% 100%;
+    margin-left:25%;
+  }
+  
+.right-cheek{
+    background: var(--penguin-belly,gray);
+    width: 60%;
+    height: 70%;
+    top: 11%;
+    border-radius: 70% 70% 60% 60%;
+    left:35%;  
+  }
+
+  .left-cheek{
+    background: var(--penguin-belly,gray);
+    top: 1%;
+    width: 60%;
+    height: 70%;
+    margin-top: 10%;
+    border-radius: 70% 70% 60% 60%;
+    margin-left:5%;
+  }
+
+    .belly{
+    background: var(--penguin-belly,gray);
+    top: 63%;
+    width: 90%;
+    height: 95%;
+    margin-top: 5%;
+    border-radius: 120% 120% 100% 100%;
+    margin-left:5%;
+  }
+
+    .left-eye{
+    background: black;
+    top: 20%;
+    width: 15%;
+    height: 15%;
+    margin-top: 15%;
+    border-radius: 50% 50% 50% 50%;
+    margin-left:20%;
+  }
+
+    .right-eye{
+    background: black;
+    top: 20%;
+    width: 15%;
+    height: 15%;
+    margin-top: 15%;
+    border-radius: 50% 50% 50% 50%;
+    margin-left:65%;
+  }
+
+    .left-hand{
+    background: var(--penguin-skin,black);
+    width: 20%;
+    height: 50%;
+    top: 20%;
+    border-radius: 20% 50% 40% 90%;
+    left:-10%;
+    transform: rotate(40deg);
+  }
+
+   .right-hand{
+    background: var(--penguin-skin,black);
+    width: 20%;
+    height: 50%;
+    top: 20%;
+    border-radius: 20% 50% 40% 90%;
+    left:90%;
+    transform: rotate(-40deg) scaleX(-1);
+  }
+
+  .right-feet {
+    top: 85%;
+    left: 65%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: -1;
+  }
+
+  .left-feet {
+    top: 85%;
+    left: 25%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    z-index: -1;
+  }
+
+    .beak-top {
+    top: 50%;
+    left:38%;
+    background: var(--penguin-beak,yellow);
+    width: 25%;
+    height: 12%;
+    border-radius: 50% 50% 50% 50%;
+  }
+
+
+  .blush-right {
+    top: 55%;
+    left: 15%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .blush-left {
+    top: 55%;
+    left: 70%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .penguin *{
+    position: absolute;
+  }
+
+</style>
+<div class="penguin">
+  <div class="penguin-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div>
+  <div class="penguin-top">
+    <div class="right-cheek"></div>
+    <div class="left-cheek"></div>
+    <div class="belly"></div>
+    <div class="right-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
+    <div class="beak-top"></div>
+    <div class="beak-bottom"></div>
+  </div>
+</div>
+</body>
+
+</html>
